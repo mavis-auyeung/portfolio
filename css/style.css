@@ -1,0 +1,435 @@
+/* ------------------------------ PAGE-WIDE ------------------------------ */
+/*html { scroll-behavior: smooth; }*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(229,0,57,0.1) 0%, rgba(229,0,57,0) 100%);
+    background-size: 100% 100vh; 
+    background-repeat: repeat-x;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+
+/* ------------------------------ INTERACTIONS ------------------------------ */
+/* --- BUTTONS --- */
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    color: #da0b0b !important;
+    padding: 15px 22px;
+    border-bottom: 1px solid #F37272;
+    background-color: #fcdddf;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.button:hover {
+    background-color: #facdcf;
+    border-bottom-color: #facdcf;
+}
+
+/* --- BOUNCING UNDERINE --- */
+.bncu {    
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+.bncu:before, .bncu:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #F37272;
+}
+.bncu:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.bncu:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.bncu:hover:before, .bncu:hover:after, .bncu:focus:before, .bncu:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.bncu:hover:before, .bncu:focus:before {
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.bncu:hover:after, .bncu:focus:after {
+  transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* --- HERO MODIFIERS --- */
+.herobutton { 
+    width: 100%;
+}
+.herobutton span { float: right; }
+
+
+
+/* ------------------------------ TEXT STYLES ------------------------------ */
+h1 {
+    font-family: 'Gentium Basic', sans-serif;
+    line-height: 115%;
+    font-weight: 400;
+    font-size: 3.8em;
+    color: #F37272;
+    word-wrap: break-word;
+}
+
+h2 {
+    font-family: 'Gentium Basic', sans-serif;
+    line-height: 115%;
+    font-weight: 400;
+    font-size: 2.2em;
+    color: #F37272;
+    word-wrap: break-word;
+}
+
+.quote {
+    font-family: 'Lora', serif;
+    margin-top: 20px;
+    font-size: 1.3em;
+    line-height: 140%;
+    color: #595053;
+}
+
+.caption {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #AB9A9E;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------- SECTIONS ------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+/* -------------------------------- HEADER -------------------------------- */
+header {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_name {
+    font-family: 'Gentium Basic', sans-serif;
+    color: #595053;
+    font-size: 2.5rem;
+    cursor: default;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header_name:hover {
+    
+}
+
+.header_nav {
+    text-align: right;
+    padding-top: 1rem;
+}
+
+.header_nav a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #595053;
+    margin-left: 30px;
+}
+
+
+
+/* ------------------------------ HERO ------------------------------ */
+#hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;  
+    margin: 10vh 0 15vh;
+}
+
+.hero_img {
+    flex: 0 1 auto;
+    max-width:100%;
+    height:auto;
+    transform: perspective(400px) rotateY(2deg);
+    border-radius: 10px;
+}
+
+.hero_desc {
+    flex: 0 1 auto;
+    margin: auto 0 auto 50px;
+    max-width: 40%;
+}
+
+.bncu.quote {
+    color: #F37272;
+}
+
+
+
+/* ------------------------------ SECTION DIVIDER ------------------------------ */
+.section {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    font-family: 'Gentium Basic', sans-serif;
+    font-size: 1.8rem;
+}
+
+.section a {
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.section_current {
+    font-weight: 700;
+    color: #595053;
+    border-bottom: 1px solid #595053;
+}
+
+.section_others {
+    color: #a38f93;
+}
+
+.section_line {
+    width: 100%;
+    height: 1px;
+    background-color: #bab1b3;
+}
+
+
+
+/* ------------------------------ ARTICLE BLOCK ------------------------------ */
+.article {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 25px 0 150px 0;
+}
+
+.article_image {
+    flex: 0 1 auto;
+    max-width:100%;
+    height:auto;
+    padding: 50px;
+}
+.article_image.R { transform: perspective(400px) rotateY(-2deg); }
+.article_image.L { transform: perspective(400px) rotateY(2deg); }
+
+.article_desc {
+    flex: 0 1 auto;
+    margin: auto 0 auto 0px;
+    max-width: 40%;
+    color: #595053;
+    font-size: 1.1rem;
+    font-family: 'Lora', sans-serif;
+    line-height: 150%;
+}
+
+
+
+/* ----------------------------- FOOTER ------------------------------ */
+footer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 25px;
+    font-family: 'Gentium Basic', sans-serif;
+    color: #ffffff;
+    
+    border-radius: 10px;
+    background: linear-gradient(270deg, #fb6ab6, #ff2158, #ff7636);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.cta-title {
+    color: #ffffff;
+    max-width: 50%;
+    align-self: flex-start;
+}
+
+.cta-description {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    max-width: 50%;
+    align-self: flex-end;
+}
+
+.cta-description a {
+    color: #ffffff;
+}
+
+.legal {
+    font-family: 'Lato', sans-serif;
+    font-size: .8rem;
+    text-align: center;
+    color: #AB9A9E;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------ RESPONSIVE ------------------------------ */
+/* ------------------------------------------------------------------------ */
+.image-small { display: none;  }
+.image-big   { display: block; }
+
+.header-small { display: none; }
+.header-big   { display: flex; }
+
+
+
+/* ------------------------------ <= 800px ------------------------------- */
+@media only screen and (max-width: 800px) {
+    /* ---------------------------- PAGE-WIDE ---------------------------- */
+    #wrapper { padding: 0 20px; }
+    
+    /* ------------------- TEXT STYLES & INTERACTIONS -------------------- */
+    h1 { font-size: 3em; }
+    h2 { font-size: 2em; }
+    .quote { font-size: 1.1em; line-height: 140%; }
+    .section { font-size: 1.5rem; }
+    .section a { margin-right: .5rem; }
+    
+    .button {  margin-top: 0; }
+    
+    /* ----------------------------- HEADER ------------------------------ */
+    .header-big   { display: none; }    
+    .header-small { display: flex; padding: 15px 0; }
+
+    .header_name { font-size: 2.5rem; }
+    .header_name p { margin: 5px 0 -10px 0; }
+    .header_name p:nth-child(2) { font-size: 1.5rem; }
+    
+    /* ------------------------------ HERO ------------------------------- */
+    #hero {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .hero_img {
+            transform: perspective(0px) rotateY(0deg);
+    }
+    .hero_desc {
+        margin: 20px 0 auto 0px;
+        max-width: 100%;
+    }
+    .herobutton { margin-top: 10px; }
+    
+    /* -------------------------- ARTICLE BLOCK -------------------------- */
+    .article {
+        flex-direction: column;
+        margin: 20px 0px 100px 0px;
+    }
+    .article_desc {
+        margin: 10px 0 auto 0px;
+        max-width: 100%;
+    }
+    
+    .article_image { padding: 0; }
+    .image-big   { display: none; }
+    .image-small { display: block; border-radius: 10px; }
+    
+    /* ----------------------------- FOOTER ----------------------------- */
+    footer {
+        flex-direction: column;
+        -webkit-animation: AnimationName 5s ease infinite;
+        -moz-animation: AnimationName 5s ease infinite;
+        animation: AnimationName 5s ease infinite;
+    } 
+    .cta-title, .cta-description {
+        max-width: 100%;
+        align-self: stretch;
+        margin: 5px 0;
+    }
+}
+
+
+
+/* ------------------------------ <= 500px ------------------------------- */
+@media only screen and (max-width: 500px) {
+    /* ---------------------------- SECTION ------------------------------ */
+    .section { margin-top: 20px; }
+    .section a { 
+        display: inline-block;
+        margin-top: .5rem;
+    }
+    .section_line { display: none; }
+    
+    /* ---------------------------- ARTICLE ------------------------------ */
+    h2 { font-size: 1.6em; }
+    .article_desc .button {
+        width: 100%;
+        text-align: center;
+    }
+}
