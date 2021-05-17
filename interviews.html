@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mavis Au-yeung</title>
+    <meta name="author" content="Mavis Au-yeung">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Lato|Lora&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ef8dc7364.js" crossorigin="anonymous"></script>
+    <script src="js/scroll-sneak.js"></script>
+</head>
+<body>
+<div id=wrapper>
+<!-- ------------------------------------------------------------ HEADER & HERO ------------------------------------------------------------ -->
+    <header class="header-big">
+        <a class="header_name bncu" href="index.html">
+            <strong>Mavis</strong> Au-Yeung
+        </a>
+        <div class="header_nav">
+            <a href="#" class="bncu">Download CV</a>
+            <a href="mailto:name@email.com" class="bncu">name@email.email</a>
+        </div>
+    </header>
+
+    <header class="header-small">
+        <a class="header_name" href="index.html">
+            <p><strong>Mavis</strong></p>
+            <p>Au-Yeung</p>
+        </a>
+        <div class="header_nav">
+            <a href="#" class="button"><i class="fas fa-file-download"></i> &nbsp; CV</a>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="hero_img">
+            <img class="hero_img" src="images/may-hero.png" width="450" height="525">
+        </div>
+
+        <div class="hero_desc">
+            <h1>Hi there!</h1>
+            <p class="quote">
+                I'm Mavis, a Hong Kong based writer with working experience in the realm of luxury and lifestyle publishing. My interests include film, dining, fashion, cosmetics, and animals. I'm always up for expanding my hobbies and knowledge in even more areas.
+            </p>
+            <p class="quote">
+                Check out some of my work below, and feel free get in touch!
+            </p>
+        </div>
+    </section>
+    
+    
+    
+<!-- ------------------------------------------------------------ SECT-1 ------------------------------------------------------------ -->
+    <div class="section" id="tabs">
+        <a href="index.html" class="section_others">Dining</a>
+        <a href="interviews.html" class="section_current">Interviews</a>
+        <a href="luxury.html" class="section_others">Luxury</a>
+        <a href="news.html" class="section_others">News</a>
+        <a href="products.html" class="section_others">Products</a>
+        <a href="sport.html" class="section_others">Sport</a>
+        <a href="travel.html" class="section_others">Travel</a>
+        <div class="section_line"></div>
+    </div>
+
+<!-- ----------------------------------------------------------- ARTICLES ----------------------------------------------------------- -->
+    <section class="article">
+        <img class="image-small article_image" src="images/i-1-sml.png">
+        
+        <div class="article_desc">
+            <h2>Savvy service reaps success</h2>
+            <span class="caption">Asia Pacific Boating July 2019</span>
+            <p>
+                “I love this city,” enthuses Besson about Hong Kong, his home of 15 years. The first thing he did when he arrived was to buy a boat: “a very fast 32-foot speedboat!” He appreciated Hong Kong as a fantastic location for boating.
+            </p>
+            <a href="work/interviews/APB%20July%202019%20-%20interview%20-%20Asia%20Yachting.pdf" class="button" target="_blank">Read full article</a>
+        </div>
+        
+        <img class="image-big article_image R" src="images/i-1.png">
+    </section>
+  
+    
+    <section class="article">
+        <img class="image-small article_image" src="images/i-2-sml.png">
+        <img class="image-big article_image L" src="images/i-2.png">
+        
+        <div class="article_desc">
+            <h2>One-stop superyacht service</h2>
+            <span class="caption">Asia Pacific Boating March 2019</span>
+            <p>
+                Paul Brackley went from crew to captain of the Ambrosia, then became designer, project manager, build-supervisor and charter operator for some of the world's major yachts and largest yacht builders. He eventually decided to combine his diverse repertoire of skills to found Central Yachts in 2010, the only point of contact clients would need to connect with for all their superyacht requirements.
+            </p>
+            <a href="work/interviews/APB%20Mar%202019%20-%20interview%20-%20Central%20Yacht.pdf" class="button" target="_blank">Read full article</a>
+        </div>
+    </section>
+    
+    
+    <section class="article">
+        <img class="image-small article_image" src="images/i-3-sml.png">
+        
+        <div class="article_desc">
+            <h2>Taking the floor</h2>
+            <span class="caption">Jet 43</span>
+            <p>
+                The day before our interview, Michael Reagan, Global Business Director of the Hand-Knotted division of House of Tai Ping, was working on a hotel in Paris, and the day of our interview, a residence in Palm Springs, California. “Just this afternoon, someone came in to ask if we could create a rug replicating the scenes of erotic debauchery from the ancient Roman city of Pompeii - I said ‘yes’ of course”.
+            </p>
+            <a href="work/interviews/Jet%2043%20-%20interview%20-%20Tai%20Ping.pdf" class="button" target="_blank">Read full article</a>
+        </div>
+        
+        <img class="image-big article_image R" src="images/i-3.png">
+    </section>
+    
+    
+    
+<!-- ------------------------------------------------------------ FOOTER ------------------------------------------------------------ -->
+<footer>
+    <h2 class="cta-title">
+        Ready to work together?
+    </h2>
+    <p class="cta-description">
+        <a href="#">Download my CV</a> or drop me a line at <a href="mailto:mavis.auyeung@gmail.com">mavis.auyeung@gmail.com</a> and I'll get back to you as soon as I can!
+    </p>
+</footer>
+
+<div class="legal">©2021, Mavis Au-Yeung</div>
+</div>
+</body>
+    <script>
+        (function() {
+            var sneaky = new ScrollSneak(location.hostname), tabs = document.getElementById('tabs').getElementsByTagName('a'), i = 0, len = tabs.length;
+            for (; i < len; i++) {
+                tabs[i].onclick = sneaky.sneak;
+            }
+        })();
+    </script>
+</html>

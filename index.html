@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mavis Au-yeung</title>
+    <meta name="author" content="Mavis Au-yeung">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Lato|Lora&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ef8dc7364.js" crossorigin="anonymous"></script>
+    <script src="js/scroll-sneak.js"></script>
+</head>
+<body>
+<div id=wrapper>
+<!-- ------------------------------------------------------------ HEADER & HERO ------------------------------------------------------------ -->
+    <header class="header-big">
+        <a class="header_name bncu" href="index.html">
+            <strong>Mavis</strong> Au-Yeung
+        </a>
+        <div class="header_nav">
+            <a href="#" class="bncu">Download CV</a>
+            <a href="mailto:name@email.com" class="bncu">name@email.email</a>
+        </div>
+    </header>
+
+    <header class="header-small">
+        <a class="header_name" href="index.html">
+            <p><strong>Mavis</strong></p>
+            <p>Au-Yeung</p>
+        </a>
+        <div class="header_nav">
+            <a href="#" class="button"><i class="fas fa-file-download"></i> &nbsp; CV</a>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="hero_img">
+            <img class="hero_img" src="images/may-hero.png" width="450" height="525">
+        </div>
+
+        <div class="hero_desc">
+            <h1>Hi there!</h1>
+            <p class="quote">
+                I'm Mavis, a Hong Kong based writer with working experience in the realm of luxury and lifestyle publishing. My interests include film, dining, fashion, cosmetics, and animals. I'm always up for expanding my hobbies and knowledge in even more areas.
+            </p>
+            <p class="quote">
+                Check out some of my work below, and feel free get in touch!
+            </p>
+        </div>
+    </section>
+    
+    
+    
+<!-- ------------------------------------------------------------ SECT-1 ------------------------------------------------------------ -->
+    <div class="section" id="tabs">
+        <a href="index.html" class="section_current">Dining</a>
+        <a href="interviews.html" class="section_others">Interviews</a>
+        <a href="luxury.html" class="section_others">Luxury</a>
+        <a href="news.html" class="section_others">News</a>
+        <a href="products.html" class="section_others">Products</a>
+        <a href="sport.html" class="section_others">Sport</a>
+        <a href="travel.html" class="section_others">Travel</a>
+        <div class="section_line"></div>
+    </div>
+
+    
+    
+<!-- ----------------------------------------------------------- ARTICLES ----------------------------------------------------------- -->
+    <section class="article">
+        <img class="image-small article_image" src="images/d-1-sml.png">
+        
+        <div class="article_desc">
+            <h2>Be green without compromise</h2>
+            <span class="caption">Jet 43</span>
+            <p>
+                A place of rest and tranquillity, SHÈ is where environmentally and health-conscious eaters indulge in home-cooked style contemporary Chinese cuisine against a panoramic backdrop of Hong Kong's Victoria Harbour. On the modern alfresco terrace, minds are put at ease knowing only premium, authentic, locally sourced, and nutritious ingredients are chosen…
+            </p>
+            <a href="work/dining/Jet%2043%20-%20dining.pdf" class="button" target="_blank">Read full article</a>
+        </div>
+        
+        <img class="image-big article_image R" src="images/d-1.png">
+    </section>
+  
+    
+    <section class="article">
+        <img class="image-small article_image" src="images/d-2-sml.png">
+        <img class="image-big article_image L" src="images/d-2.png">
+        
+        <div class="article_desc">
+            <h2>After all, the way to their hearts is through their stomachs</h2>
+            <span class="caption">Jet 42</span>
+            <p>
+                The theme here is wood and fire, from oil lantern lighting to food cooked over the natural flames of a custom-designed wood-fired earth pit.
+            </p>
+            <p>
+                Relish the menu that reinterprets traditional flavours and spices, and don’t miss out on unique items like the Slow Roasted Lamb Shoulder with Spiced Molasses—the result of labour-intensive burning of a fire down to embers before burying the next night’s menu inside to roast overnight.
+            </p>
+            <a href="work/dining/Jet%2042%20-%20dining.pdf" class="button" target="_blank">Read full article</a>
+        </div>
+    </section>
+    
+    
+    
+<!-- ------------------------------------------------------------ FOOTER ------------------------------------------------------------ -->
+<footer>
+    <h2 class="cta-title">
+        Ready to work together?
+    </h2>
+    <p class="cta-description">
+        <a href="#">Download my CV</a> or drop me a line at <a href="mailto:mavis.auyeung@gmail.com">mavis.auyeung@gmail.com</a> and I'll get back to you as soon as I can!
+    </p>
+</footer>
+
+<div class="legal">©2021, Mavis Au-Yeung</div>
+</div>
+</body>
+    <script>
+        (function() {
+            var sneaky = new ScrollSneak(location.hostname), tabs = document.getElementById('tabs').getElementsByTagName('a'), i = 0, len = tabs.length;
+            for (; i < len; i++) {
+                tabs[i].onclick = sneaky.sneak;
+            }
+        })();
+    </script>
+</html>
